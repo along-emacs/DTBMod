@@ -1,10 +1,10 @@
 {
-    "modid": "dtbmod",
+    "modid": "DTBMod",
     "name": "Darker Than Black（黑之契约者）",
     "author_list": [
         "黑"
     ],
-    "description": "The mod using characters from 《Darker Than Black》",
+    "description": "This mod using characters from 《Darker Than Black》",
     "version": "0.1",
     "sts_version": "03-29-2018",
     "mts_version": "2.6.0",
