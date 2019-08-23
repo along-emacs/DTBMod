@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
 
-public class RuI extends CustomCard {
+public class RuI_cost extends CustomCard {
 	private static final String[] CLSNAMES = Thread.currentThread().getStackTrace()[1].getClassName().split("\\.");
 	private static final String   CLSNAME  = CLSNAMES[CLSNAMES.length - 1];
 	
@@ -24,16 +24,16 @@ public class RuI extends CustomCard {
 	public  static final String   ID       = makeID(CLSNAME);
 	
     private static final CardStrings INFO = CardCrawlGame.languagePack.getCardStrings(ID);
-    private static final int         COST = 2;
+    private static final int         COST = 0;
     
-    public RuI() {
+    public RuI_cost() {
         super(
         		ID, INFO.NAME, getImgPath(CLSNAME), COST, INFO.DESCRIPTION,
         		AbstractCard.CardType.SKILL, AbstractCard.CardColor.RED,
         		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF
         		);
-        LOGGER.info("XXXXXXXXX "+CLSNAME);
-        LOGGER.info("XXXXXXXXX "+ID);
+        LOGGER.info("++++++++++++++++++++++++ "+CLSNAME);
+        LOGGER.info("++++++++++++++++++++++++ "+ID);
     }
     
     @Override

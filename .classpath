@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="D:/code/slay-the-spire-mods/lib/BaseMod.jar"/>
 	<classpathentry kind="lib" path="D:/code/slay-the-spire-mods/lib/desktop-1.0.jar"/>
 	<classpathentry kind="lib" path="D:/code/slay-the-spire-mods/lib/ModTheSpire.jar"/>
+	<classpathentry kind="lib" path="D:/code/slay-the-spire-mods/lib/StSLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

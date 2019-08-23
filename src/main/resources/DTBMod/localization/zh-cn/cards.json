@@ -1,6 +1,10 @@
 {
 	"DTBMod:RuI": {
 		"NAME": "路易",
-		"DESCRIPTION":"获得飞行状态。"
+		"DESCRIPTION":" #y契约者 。\n获得 #y飞行 状态。"
+	},
+	"DTBMod:RuI_cost": {
+		"NAME": "掰断手指",
+		"DESCRIPTION":"两回合内降低2点敏捷。"
 	}
 }

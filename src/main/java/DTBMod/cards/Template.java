@@ -1,6 +1,5 @@
 package DTBMod.cards;
 
-import DTBMod.DTBMod;
 import static DTBMod.DTBMod.getImgPath;
 import static DTBMod.DTBMod.makeID;
 
@@ -15,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
 
-public class RuI extends CustomCard {
+public class Template extends CustomCard {
 	private static final String[] CLSNAMES = Thread.currentThread().getStackTrace()[1].getClassName().split("\\.");
 	private static final String   CLSNAME  = CLSNAMES[CLSNAMES.length - 1];
 	
@@ -24,26 +23,25 @@ public class RuI extends CustomCard {
 	public  static final String   ID       = makeID(CLSNAME);
 	
     private static final CardStrings INFO = CardCrawlGame.languagePack.getCardStrings(ID);
-    private static final int         COST = 2;
-    
-    public RuI() {
-        super(
-        		ID, INFO.NAME, getImgPath(CLSNAME), COST, INFO.DESCRIPTION,
+    private static final int         COST = 0;
+
+	public Template() {
+		super(
+				ID, INFO.NAME, getImgPath(CLSNAME), COST, INFO.DESCRIPTION,
         		AbstractCard.CardType.SKILL, AbstractCard.CardColor.RED,
         		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF
-        		);
-        LOGGER.info("XXXXXXXXX "+CLSNAME);
-        LOGGER.info("XXXXXXXXX "+ID);
-    }
-    
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-    }
-    
-    @Override
-    public void upgrade() {
+				);
+	}
+	
+	@Override
+	public void use(AbstractPlayer arg0, AbstractMonster arg1) {
+		// TODO Auto-generated method stub
+	}
+	
+	@Override
+	public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
         }
-    }
+	}
 }
