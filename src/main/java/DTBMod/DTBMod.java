@@ -79,7 +79,8 @@ public class DTBMod implements
 		Keyword[] ks = gson.fromJson(json, Keyword[].class);
 		if (ks != null) {
 			for (Keyword ky : ks) {
-				BaseMod.addKeyword(getModID().toLowerCase(), ky.NAMES, ky.DESCRIPTION);
+				BaseMod.addKeyword(ky.NAMES, ky.DESCRIPTION);
+				LOGGER.info("Added "+ky.NAMES[0]);
 			}
 		}
 	}
